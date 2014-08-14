@@ -53,6 +53,7 @@ void FuckItJustFindATemplate(){
 	git clone git@github.com:poole/poole.git;
 	cp -a /poole/. .;
 	rm -r poole;
+	rm -r .git;
 	git init;
 	git remote add origin git@github.com:apiotrow/apiotrow.github.io.git;
 	git add -A;
