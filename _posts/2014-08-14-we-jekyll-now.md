@@ -13,7 +13,7 @@ void InstallJekyll(){
 	MakeABlog();
 }
 
-void InstallGem(){
+void UpdateGem(){
 	try{
 		gem install rubygems-update;
 		update_rubygems;
