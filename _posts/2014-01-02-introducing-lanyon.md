@@ -11,10 +11,10 @@ Step 1: Find your picture
 
 Step 2: Crop it 4 times
 
-backimage leftimage downimage rightimage 
+({{ site.url }}/assets/2014-08-09/backimage.png)({{ site.url }}/assets/2014-08-09/leftimage.png)({{ site.url }}/assets/2014-08-09/downimage.png)({{ site.url }}/assets/2014-08-09/rightimage.png)
 
 Step 3: Put it in Unity
 
-Screen shot 2014-08-08 at 7.32.19 PM
+({{ site.url }}/assets/2014-08-09/screeny.png)
 
 Step 4: Take a screenshot and attach it to a job application.
