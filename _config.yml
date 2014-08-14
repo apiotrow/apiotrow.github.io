@@ -14,13 +14,12 @@ baseurl:          '/'
 paginate:         5
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Aaron Piotrowski'
 
 # Custom vars
 version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/lanyon
+#  repo:           https://github.com/poole/lanyon
 
 highlighter:      pygments
