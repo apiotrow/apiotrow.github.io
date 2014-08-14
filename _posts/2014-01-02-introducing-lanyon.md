@@ -11,10 +11,10 @@ Step 1: Find your picture
 
 Step 2: Crop it 4 times
 
-({{ site.url }}/assets/2014-08-09/backimage.png)({{ site.url }}/assets/2014-08-09/leftimage.png)({{ site.url }}/assets/2014-08-09/downimage.png)({{ site.url }}/assets/2014-08-09/rightimage.png)
+![My helpful screenshot]({{ site.url }}/assets/2014-08-09/backimage.png)({{ site.url }}/assets/2014-08-09/leftimage.png)({{ site.url }}/assets/2014-08-09/downimage.png)({{ site.url }}/assets/2014-08-09/rightimage.png)
 
 Step 3: Put it in Unity
 
-({{ site.url }}/assets/2014-08-09/screeny.png)
+![My helpful screenshot]({{ site.url }}/assets/2014-08-09/screeny.png)
 
 Step 4: Take a screenshot and attach it to a job application.
