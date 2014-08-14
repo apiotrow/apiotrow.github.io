@@ -11,7 +11,7 @@ Step 1: Find your picture
 
 Step 2: Crop it 4 times
 
-![My helpful screenshot]({{ site.url }}/assets/2014-08-09/backimage.png)![My helpful screenshot]({{ site.url }}/assets/2014-08-09/leftimage.png)![My helpful screenshot]({{ site.url }}/assets/2014-08-09/downimage.png)![My helpful screenshot]({{ site.url }}/assets/2014-08-09/rightimage.png)
+![My helpful screenshot]({{ site.url }}/assets/2014-08-09/backimage.png)[M]({{ site.url }}/assets/2014-08-09/leftimage.png)![My helpful screenshot]({{ site.url }}/assets/2014-08-09/downimage.png)![My helpful screenshot]({{ site.url }}/assets/2014-08-09/rightimage.png)
 
 Step 3: Put it in Unity
 
