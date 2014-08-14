@@ -57,10 +57,11 @@ void FuckItJustFindATemplate(){
 	git add -A;
 	git commit -m "First commit. Really proud of all this stuff I made completely on my own";
 	git push -u origin master;
-	![My helpful screenshot]({{ site.url }}/assets/2014-08-09/1336023490071.png);
 }
 
 {% endhighlight %}
 
 
 And now I have this blog. 
+
+![My helpful screenshot]({{ site.url }}/assets/2014-08-14/MatrixCode.png)
