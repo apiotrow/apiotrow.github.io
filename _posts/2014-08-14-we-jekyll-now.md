@@ -21,7 +21,7 @@ void UpdateGem(){
 		string err = "Fetching: eventmachine-1.0.3.gem (100%) ERROR:  While executing gem ... (Gem::FilePermissionError) You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.";
 		if(e.ToString() == err){
 			InstallRbenv();
-			InstallGem();
+			UpdateGem();
 			 //infinite loops are best loops
 		}
 
