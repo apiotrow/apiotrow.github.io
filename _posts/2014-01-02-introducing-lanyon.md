@@ -7,7 +7,7 @@ Skyboxes are these cool things in Unity that allow you to create skies. Skyboxes
 
 Step 1: Find your picture
 
-1336023490071
+![My helpful screenshot]({{ site.url }}/assets/2014-08-09/1336023490071.png)
 
 Step 2: Crop it 4 times
 
