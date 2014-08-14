@@ -22,7 +22,7 @@ void UpdateGem(){
 		if(e.ToString() == err){
 			InstallRbenv();
 			UpdateGem();
-			 //infinite loops are best loops
+			//infinite loops are best loops
 		}
 
 	}
