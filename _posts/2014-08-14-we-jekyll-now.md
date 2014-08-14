@@ -8,14 +8,15 @@ Just migrated this blog from Wordpress.com to my GitHub. Using this thing called
 	
 {% highlight c# %}
 void InstallJekyll(){
-	InstallGem();
+	UpdateGem();
 	InstallJekyll();
 	MakeABlog();
 }
 
 void InstallGem(){
 	try{
-		install gem;
+		gem install rubygems-update;
+		update_rubygems;
 	}catch(IOException e){
 		string err = "Fetching: eventmachine-1.0.3.gem (100%) ERROR:  While executing gem ... (Gem::FilePermissionError) You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.";
 		if(e.ToString() == err){
