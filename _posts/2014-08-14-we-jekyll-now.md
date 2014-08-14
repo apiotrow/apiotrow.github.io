@@ -64,4 +64,4 @@ void FuckItJustFindATemplate(){
 
 And now I have this blog. 
 
-![My helpful screenshot]({{ site.url }}/assets/2014-08-14/MatrixCode.png)
+![matrix]({{ site.url }}/assets/2014-08-14/MatrixCode.jpg)
