@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Pood
 ---
 
 <p class="message">
