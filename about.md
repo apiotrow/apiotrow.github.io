@@ -1,6 +1,6 @@
 ---
-#layout: page
-#title: Pood
+layout: page
+title: Pood
 ---
 
-#Dood
+Dood
