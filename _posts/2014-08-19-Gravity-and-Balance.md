@@ -1,6 +1,6 @@
 ---
 layout: post
-title: We Jekyll Now
+title: Gravity and Balance
 ---
 
 Had this idea of a plate, and on the plate is a ball. The plate has to continually tilt in order to keep the ball from rolling off the edge. I wondered how effective I could make an AI plate. Ended up with more-or-less this:
@@ -39,7 +39,7 @@ if (zdiff < 0) {
 
 This method is a bit amateurish. I'm just testing the ball's position relative to the center of the plate. If it's off to one side, the plate tilts. How quickly it tilts depends on the ball's distance from the center. As the ball nears the edge, the plate will begin tilting faster. The downside of this method is the plate gets jittery at extreme tilts, most likely because I'm tilting on two axes at once. I tried the pro method of determining the needed axis of tiltage by calculating a vector off of the ball. When I tried that, the vector worked, but the tilt didn't. I blame quaternions, and my refusal to understand what a quaternion is.
 
-<a href="https://rawgit.com/apiotrow/UnityExperiments/master/balance/balance.html"><img src="/assets/2014-08-19/balancesc.png">
+<a href="https://rawgit.com/apiotrow/UnityExperiments/master/balance/balance.html"><img src="/assets/2014-08-19/balancesc.png"></a>
 
 
 I also added to a project I didn't think would go anywhere. It started out as an attempt to make a game where you leap from planet to planet, coming under the effect of their gravitational fields as you neared them. As I worked on it, I moved away from that and just ended up wanting to make an orbit simulation. I was interested in how some of the "planetary systems" I was making were tending toward equilibrium. So I decided to work on a solar system type thing, where each planet interacted realistically with every other planet. I went balls out and decided to do minimal work with Unity's interface, instead opting to generate as much as I could within the code. I ended up with some pretty sick loops. Check em:
@@ -134,4 +134,4 @@ Pretty beastly nested loop I have there. Don't act like you're not impressed. Th
 
 This build is still buggy, but can generate some cool results if you mess with the settings enough. Not sure where I'm going to take this one. I may not find the orbital equlibrium I was seeking, but I think some cooler shit might spawn from this.
 
-<a href="https://rawgit.com/apiotrow/UnityExperiments/master/gravity/gravity.html"><img src="/assets/2014-08-19/orbitsc.png">
+<a href="https://rawgit.com/apiotrow/UnityExperiments/master/gravity/gravity.html"><img src="/assets/2014-08-19/orbitsc.png"></a>
