@@ -33,3 +33,5 @@ This method I consider a bit amateurish. I'm just testing the ball's position re
 
 ![balance]({{ site.url }}/assets/2014-08-19/balancesc.png)![link]({{ site.url }}https://rawgit.com/apiotrow/UnityExperiments/master/balance/balance.html)
 
+<a href="https://rawgit.com/apiotrow/UnityExperiments/master/balance/balance.html"><img src="/assets/2014-08-19/balancesc.png">
+
