@@ -42,7 +42,7 @@ This method is a bit amateurish. I'm just testing the ball's position relative t
 <a href="https://rawgit.com/apiotrow/UnityExperiments/master/balance/balance.html"><img src="/assets/2014-08-19/balancesc.png"></a>
 
 
-I also added to a project I didn't think would go anywhere. It started out as an attempt to make a game where you leap from planet to planet, coming under the effect of their gravitational fields as you neared them. As I worked on it, I moved away from that and just ended up wanting to make an orbit simulation. I was interested in how some of the "planetary systems" I was making were tending toward equilibrium. So I decided to work on a solar system type thing, where each planet interacted realistically with every other planet. I went balls out and decided to do minimal work with Unity's interface, instead opting to generate as much as I could within the code. I ended up with some pretty sick loops. Check em:
+I also added to a project I didn't think would go anywhere. It started out as an attempt to make a game where you leap from planet to planet, coming under the effect of their gravitational fields as you neared them. As I worked on it, I moved away from that and just ended up wanting to make an orbit simulation. I was interested in how some of the planetary systems I was making were tending toward equilibrium. So I decided to work on a solar system type thing, where each planet was subject to the gravitational pull of every other planet. I went balls out and decided to do minimal work with Unity's interface, opting instead to generate as much as I could within the code. I ended up with some pretty sick loops. Check em:
 
 
 {% highlight c# %}
@@ -50,7 +50,6 @@ I also added to a project I didn't think would go anywhere. It started out as an
 public Planet[] planets;
 	
 void Start () {	
-numPlanets = PlayerPrefs.GetInt ("numplan");
 
 planets = new Planet[numPlanets];
 
@@ -74,29 +73,32 @@ for(int i = 2; i < planets.Length; i++){
 
 	//make a clone
 	Planet newplanet = 
-		Instantiate (planets[0], randLoc, transform.rotation) as Planet;
+		Instantiate (planets[0], 
+			randLoc, 
+			transform.rotation) as Planet;
 		
 	//add it to the array
 	planets[i] = newplanet;
 
+	//give it a random mass
 	planets[i].rigidbody.mass = 
 		Random.Range (PlayerPrefs.GetFloat ("massMin"), 
 		PlayerPrefs.GetFloat ("massMax"));
 	massMax = PlayerPrefs.GetFloat ("massMax");
 	massMin = PlayerPrefs.GetFloat ("massMin");
 
-	//random color for planet
+	//give it a random color
 	planets[i].renderer.material.color = 
 		new Color(Random.Range (0f,1f),
 			Random.Range (0f,1f),
 			Random.Range (0f,1f));
 
-	//random planet size
+	//give it a random size
 	float randScale = Random.Range (1f, 6f);
 	planets[i].transform.localScale += 
 		new Vector3(randScale,randScale,randScale);
 
-	//some randomization for initial direction
+	//give it a random starting direction
 	float rand = Random.Range (0f,1f);
 	Vector3 dir;
 			
@@ -116,7 +118,8 @@ for(int i = 2; i < planets.Length; i++){
 }
 
 void FixedUpdate () {
-//make every planet influenced by the gravity of every other planet
+//make every planet influenced by the gravity of every other planet.
+//the strength of gravitational pull is proportional to its mass
 for(int i = 0; i < planets.Length; i++){
 	for(int j = 0; j < planets.Length; j++){
 		if (i != j)
@@ -130,8 +133,8 @@ for(int i = 0; i < planets.Length; i++){
 }
 {% endhighlight %}
 
-Pretty beastly nested loop I have there. Don't act like you're not impressed. This is just a summary of the code. I left out all the butt-ugly GUI and PlayerPref junk. I didn't realize passing data from one scene to another was so easy in Unity. For a long time I thought Application.LoadLevelAdditive was the only way to preserve anything. That's a super ugly method, where you have to iteratively delete every object you don't want passed in to the level you're loading. PlayerPrefs allowed me to keep user-inputs across level reloads. Hence, a brand new GUI to streamline the solar system creation process.
+Pretty beastly nested loop I have there. Don't act like you're not impressed. This is just a summary of the code. I left out all the butt-ugly GUI and PlayerPref junk. I didn't realize passing data from one scene to another was so easy in Unity. For a long time I thought Application.LoadLevelAdditive was the only way to preserve anything. That's a super ugly method, where you're forced to iteratively delete every object you don't want passed in to the level you're loading. PlayerPrefs allowed me to keep user inputs across level reloads. Hence, a brand new GUI to streamline the solar system creation process.
 
-This build is still buggy, but can generate some cool results if you mess with the settings enough. Not sure where I'm going to take this one. I may not find the orbital equlibrium I was seeking, but I think some cooler shit might spawn from this.
+This build is still buggy, but can generate some alright results if you mess with the settings enough. Not sure where I'm going to take this one. I may not find the orbital equlibrium I was seeking, but I think some cooler shit might spawn from it.
 
 <a href="https://rawgit.com/apiotrow/UnityExperiments/master/gravity/gravity.html"><img src="/assets/2014-08-19/orbitsc.png"></a>
