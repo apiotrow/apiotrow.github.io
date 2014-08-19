@@ -3,7 +3,7 @@ layout: post
 title: Gravity and Balance
 ---
 
-Had this idea of a plate, and on the plate is a ball. The plate has to continually tilt in order to keep the ball from rolling off the edge. I wondered how effective I could make an AI plate. Ended up with more-or-less this:
+Had this idea of a plate, and on the plate is a ball. The plate has to continually tilt in order to keep the ball from rolling off the edge. I wondered how effective I could make an AI-driven plate. Ended up with something like this:
 
 
 {% highlight c# %}
@@ -16,6 +16,8 @@ dist = Vector3.Distance (ballPos, platePos);
 float xrot = transform.rotation.eulerAngles.x;
 float zrot = transform.rotation.eulerAngles.z;
 
+//if ball is left or right of center, tilt
+//toward center
 if (xdiff < 0) {
 	transform.RotateAround (transform.position, 
 	Vector3.forward, 
@@ -26,6 +28,8 @@ if (xdiff < 0) {
 	Time.deltaTime * dist);
 }
 
+//if ball is above or below center, tilt
+//toward center
 if (zdiff < 0) {
 	transform.RotateAround (transform.position, 
 	Vector3.left, 
@@ -37,7 +41,7 @@ if (zdiff < 0) {
 }
 {% endhighlight %}
 
-This method is a bit amateurish. I'm just testing the ball's position relative to the center of the plate. If it's off to one side, the plate tilts. How quickly it tilts depends on the ball's distance from the center. As the ball nears the edge, the plate will begin tilting faster. The downside of this method is the plate gets jittery at extreme tilts, most likely because I'm tilting on two axes at once. I tried the pro method of determining the needed axis of tiltage by calculating a vector off of the ball. When I tried that, the vector worked, but the tilt didn't. I blame quaternions, and my refusal to understand what a quaternion is.
+This method is a bit amateurish. I'm just testing the ball's position relative to the center of the plate. If it's off to one side, the plate tilts. How quickly it tilts depends on the ball's distance from the center. As the ball nears the edge, the plate will begin tilting faster. The downside of this method is that the plate gets jittery at extreme tilts, most likely because I'm tilting on two axes at once, and they end up fighting with each other. I tried the pro method of determining the needed axis of tiltage by calculating a vector off of the ball. When I tried that, the vector worked, but the tilt didn't. I blame quaternions, and my refusal to understand what a quaternion is.
 
 <a href="https://rawgit.com/apiotrow/UnityExperiments/master/balance/balance.html"><img src="/assets/2014-08-19/balancesc.png"></a>
 
