@@ -31,5 +31,5 @@ if (zdiff < 0) {
 
 This method I consider a bit amateurish. I'm just testing the ball's position relative to the center of the plate. If it's off to one side, the plate tilts. How quickly it tilts depends on the ball's distance from the center. As the ball nears the edge, the plate will begin tilting faster. The downside of this method is the plate gets jittery at extreme tilts, most likely because I'm tilting on two axes at once. I tried the pro method of determining the needed axis of tiltage by calculating a vector off of the ball. The vector worked, but the tilt didn't. Fucking quaternions.
 
-![balance]({{ site.url }}/assets/2014-08-19/balancesc.png)
+![balance]({{ site.url }}/assets/2014-08-19/balancesc.png)![link]({{ site.url }}https://rawgit.com/apiotrow/UnityExperiments/master/balance/balance.html)
 
