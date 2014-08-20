@@ -5,8 +5,7 @@ title: Gravity and Balance
 
 Had this idea of a plate, and on the plate is a ball. The plate has to continually tilt in order to keep the ball from rolling off the edge. I wondered how effective I could make an AI-driven plate. Ended up with something like this:
 
-
-{% highlight c# %}
+<pre><code class="cs">
 platePos = transform.position;
 ballPos = ball.transform.position;
 
@@ -39,17 +38,18 @@ if (zdiff < 0) {
 	Vector3.right, 
 	Time.deltaTime * dist);
 }
-{% endhighlight %}
 
-This method is a bit amateurish. I'm just testing the ball's position relative to the center of the plate. If it's off to one side, the plate tilts. How quickly it tilts depends on the ball's distance from the center. As the ball nears the edge, the plate will begin tilting faster. The downside of this method is that the plate gets jittery at extreme tilts, most likely because I'm tilting on two axes at once, and they end up fighting with each other. I tried the pro method of determining the needed axis of tiltage by calculating a vector off of the ball. When I tried that, the vector worked, but the tilt didn't. I blame quaternions, and my refusal to understand what a quaternion is.
+</code></pre>
+
+
+This method is a bit stupid. I'm just testing the ball's position relative to the center of the plate. If it's off to one side, the plate tilts. How quickly it tilts depends on the ball's distance from the center. As the ball nears the edge, the plate will begin tilting faster. The downside of this method is that the plate gets jittery at extreme tilts, most likely because I'm tilting on two axes at once, and they end up fighting with each other. I tried the pro method of determining the needed axis of tiltage by calculating a vector off of the ball. When I tried that, the vector worked, but the tilt didn't. I blame quaternions, and my refusal to understand what a quaternion is.
 
 <a href="https://rawgit.com/apiotrow/UnityExperiments/master/balance/balance.html"><img src="/assets/2014-08-19/balancesc.png"></a>
 
 
 I also added to a project I didn't think would go anywhere. It started out as an attempt to make a game where you leap from planet to planet, coming under the effect of their gravitational fields as you neared them. As I worked on it, I moved away from that and just ended up wanting to make an orbit simulation. I was interested in how some of the planetary systems I was making were tending toward equilibrium. So I decided to work on a solar system type thing, where each planet was subject to the gravitational pull of every other planet. I went balls out and decided to do minimal work with Unity's interface, opting instead to generate as much as I could within the code. I ended up with some pretty sick loops. Check em:
 
-
-{% highlight c# %}
+<pre><code class="cs">
 //array of planets
 public Planet[] planets;
 	
@@ -135,10 +135,11 @@ for(int i = 0; i < planets.Length; i++){
 	}
 }
 }
-{% endhighlight %}
+
+</code></pre>
 
 Pretty beastly nested loop I have there. Don't act like you're not impressed. This is just a summary of the code. I left out all the butt-ugly GUI and PlayerPref junk. I didn't realize passing data from one scene to another was so easy in Unity. For a long time I thought Application.LoadLevelAdditive was the only way to preserve anything. That's a super ugly method, where you're forced to iteratively delete every object you don't want passed in to the level you're loading. PlayerPrefs allowed me to keep user inputs across level reloads. Hence, a brand new GUI to streamline the solar system creation process.
 
-This build is still buggy, but can generate some alright results if you mess with the settings enough. Not sure where I'm going to take this one. I may not find the orbital equlibrium I was seeking, but I think some cooler shit might spawn from it.
+This build is still buggy, but can generate some alright results if you mess with the settings enough. Not sure where I'm going to take this one. I may not find the orbital equlibrium I was seeking, but I think some cooler stuff might spawn from it.
 
 <a href="https://rawgit.com/apiotrow/UnityExperiments/master/gravity/gravity.html"><img src="/assets/2014-08-19/orbitsc.png"></a>
