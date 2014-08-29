@@ -19,7 +19,7 @@ Definitely some uncanny valley stuff going on there. I have nothing but respect 
 
 I did mess with voxels, for about 30 total minutes. I think I've lost my passion for them. I feel like there was a voxel feeding frenzy for a few years, and now we're reaching a point of stability where everything interesting that could be done with them has been done. I doubt I'll change the world if I start working with them. A friend of mine this Summer wrote on the whiteboard in our game lab "Because you'll never pull a Notch." I believe he was right.
 
-Here's an infinite-world voxel generator during one of my my Google adventures:
+Here's an infinite-world voxel generator I came across during one of my my Google adventures:
 
 <img src="/assets/2014-08-29/voxel.png">
 
