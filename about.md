@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Pood
+title: Contact
 ---
 
-Dood
+aaron.p.piotrowski@gmail.com
