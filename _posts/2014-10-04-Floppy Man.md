@@ -22,7 +22,7 @@ I imported some rope-like things I created in a previous project, which use <a h
 
 I'll probably throw it up on the Unity asset store eventually. I can't deny the masses something as ingenious and clearly error-free as this.
 
-I also recently found out that porting Unity projects to Android is fairly painless. Floppy Man didn't even require implementing a control scheme for touch-screen. Alice did, however. I had to find a mobile joystick/button tool to make that game playable. It's something I'll probably experiment with more in the future:
+I also recently found out that porting Unity projects to Android is fairly painless. Floppy Man didn't even require implementing a control scheme for touch-screen. Alice did, however. I had to find a mobile joystick/button tool to make that game playable. I spent about 2 hours in vain trying to get it to play well with Unity's character controller. It ended up looking like it wasn't worth the effort, though, and that making your own controller specifically for the GUI joysticks would be the only option. Still, it looked powerful, so it's something I'll probably experiment with more in the future:
 
 <center><img src="/assets/2014-10-04/05.jpg"></center>
 
