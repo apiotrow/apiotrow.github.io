@@ -13,7 +13,7 @@ I attempted to create a creature that would keep itself erect by placing its fee
 <iframe width="560" height="315" src="//www.youtube.com/embed/Qi5adyccoKI" frameborder="0" allowfullscreen></iframe>
 </center> 
 
-The level of realism there is fucking astonishing. I decided to try to recreate those effects from scratch, starting with just trying making a humanoid keep iself from falling over by shifting it's feet around when the center of gravity moves. I'm not sure when I stopped that, but I think it was around the time I randomly stumbled into <a href="http://pastebin.com/j3DWqe3R">DragRigidBody</a>, a script that allows you to drag items in a scene using the mouse. My project quickly devolved from procedural generation into flinging things around.
+The level of realism there is astonishing to me. I decided to try to recreate those effects from scratch, starting with just trying making a humanoid keep iself from falling over by shifting it's feet around when the center of gravity moves. I'm not sure when I stopped that, but I think it was around the time I randomly stumbled into <a href="http://pastebin.com/j3DWqe3R">DragRigidBody</a>, a script that allows you to drag items in a scene using the mouse. My project quickly devolved from procedural generation into flinging things around.
 
 I imported some rope-like things I created in a previous project, which use <a href="http://docs.unity3d.com/Manual/class-ConfigurableJoint.html">Configurable Joints</a> to connect with each other in a chain. I think these are generally used for limbs, signs, doors, and other swinging things. Once I got the rope thing working though, I've been obsessed with it. It's incredibly versatile, usable for anything from wrecking balls to horse-lifting:
 
