@@ -26,7 +26,7 @@ I was invited to bring the game back for our "second chance" pitches, where we r
 <img src="/assets/2014-11-09/17.png">
 <img src="/assets/2014-11-09/18.png">
 
-Have you ever seen a bigger load of shit in your life? This idea sounded plausible for the first 5 minutes I was thinking of it, then soon became the worst idea ever, for various reasons. But, out of sheer hilarity at the thought of pitching this, I went through with it. I was a good student, though. I did my research beforehand to see if anything like this already existed. I think perhaps there was a reason (or a few) that, no, in fact, nothing like this exists. However, I did find a thread on /r/Oculus from a year ago where someone proposed this idea, and got some solid feedback:
+Have you ever seen a bigger load of shit in your life? This idea sounded plausible for the first 5 minutes I was thinking of it, then soon became the worst idea ever, for various reasons. But, out of sheer hilarity at the thought of pitching this, I went through with it. I was a good student, though. I did my research beforehand to see if anything like this already existed. I think perhaps there was a reason (or a few) that, no, in fact, nothing like this exists. However, I did find a thread on /r/Oculus from a year ago where someone proposed this idea and got some solid feedback:
 
 <img src="/assets/2014-11-09/20.png">
 
@@ -37,3 +37,5 @@ There's a few other concerns, such as the ones expressed in the class feedback G
 Harsh. However, having my pitch selected means I have to refine it, build a prototype, and then pitch it again. The good part is that I can bring one classmate on to help me. I knew from the beginning who I wanted. I have a friend who has made it clear that he hates any kind of custom hardware, and is only interested in programming a game. I joked with him that if Hoppity-Boing made it to the final 15, I'd force him to join my team and make him work on the trampoline the entire year. I broke the bad new to him soon after I heard I was going on to round 2:
 
 <img src="/assets/2014-11-09/22.png">
+
+All in all, I'm pretty amped to start this.
