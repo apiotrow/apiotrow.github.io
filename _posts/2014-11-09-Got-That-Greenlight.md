@@ -38,4 +38,4 @@ Harsh. However, having my pitch selected means I have to refine it, build a prot
 
 <img src="/assets/2014-11-09/22.png">
 
-All in all, I'm pretty amped to start this.
+All in all, I'm pretty amped to start this. At least when we don't make it round three, I will have the security of knowing we stood zero chance of making it in the first place.
