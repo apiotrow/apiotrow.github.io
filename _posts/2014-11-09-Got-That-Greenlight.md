@@ -33,3 +33,7 @@ Have you ever seen a bigger load of shit in your life? This idea sounded plausib
 There's a few other concerns, such as the ones expressed in the class feedback Google doc:
 
 <img src="/assets/2014-11-09/21.png">
+
+Harsh. However, having my pitch selected means I have to refine it, build a prototype, and then pitch it again. The good part is that I can bring one classmate on to help me. I knew from the beginning who I wanted. I have a friend who has made it clear that he hates any kind of custom hardware, and is only interested in programming a game. I joked with him that if Hoppity-Boing made it to the final 15, I'd force him to join my team and make him work on the trampoline the entire year. I broke the bad new to him soon after I heard I was going on to round 2:
+
+<img src="/assets/2014-11-09/22.png">
