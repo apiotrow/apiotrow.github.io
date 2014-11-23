@@ -3,7 +3,7 @@ markdown:         redcarpet
 pygments:         true
 
 # Permalinks
-permalink:        pretty
+permalink:        /blog/:categories/:year/:month/:day/:title.html
 
 # Setup
 title:            Aaron Piotrowski
